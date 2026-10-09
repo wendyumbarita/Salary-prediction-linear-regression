@@ -49,6 +49,12 @@ The final model included age, age squared, sex, education, weeks worked, and Eng
 -Nested-model F-tests showed that occupation and citizenship contributed explanatory information, although the final model excluded them to prioritize simplicity and interpretability.
 -The analysis also illustrated limitations of salary prediction using observational survey data, particularly the effects of influential observations and variability in income.
 
+### Regression Diagnostics
+
+![Residuals before transformation](figures/residuals.png)
+![Residuals after log transformation](figures/reslog.png)
+![qqplot](figures/qq.png)
+
 ## Limitations
 
 The analysis used observational survey data, and the results should not be interpreted as causal relationships. Data-filtering decisions may affect the estimates, and model performance was evaluated in-sample rather than on an independent test set.
