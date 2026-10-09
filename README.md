@@ -30,7 +30,7 @@ The original analysis considered these variables:
 | `birth`, `powspuma` | Place-of-birth and workplace-location variables | Explored but not modeled |
 
 
-##Methodology
+## Methodology
 
 The analysis was implemented in R and involved:
 
@@ -40,7 +40,7 @@ The analysis was implemented in R and involved:
 -Model Refinement: Applied a log transformation to the response variable and compared nested models using partial F-tests.
 -Prediction: Generated salary estimates and 95% prediction intervals for individuals with different characteristics.
 
-##Results and Key findings: 
+## Results and Key findings: 
 The final model included age, age squared, sex, education, weeks worked, and English proficiency.
 
 -The log-transformed regression model achieved an in-sample R² of approximately 0.51.
@@ -49,10 +49,10 @@ The final model included age, age squared, sex, education, weeks worked, and Eng
 -Nested-model F-tests showed that occupation and citizenship contributed explanatory information, although the final model excluded them to prioritize simplicity and interpretability.
 -The analysis also illustrated limitations of salary prediction using observational survey data, particularly the effects of influential observations and variability in income.
 
-##Limitations
+## Limitations
 
 The analysis used observational survey data, and the results should not be interpreted as causal relationships. Data-filtering decisions may affect the estimates, and model performance was evaluated in-sample rather than on an independent test set.
 
-##How to Run
+## How to Run
 
 Install the required R packages and run the analysis script. The dataset is available through the freqparcoord package.
